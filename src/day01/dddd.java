@@ -6,7 +6,7 @@ public class dddd {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         System.out.print("Notunuzu giriniz : ");
-        int not = scan.nextInt();
+       /* int not = scan.nextInt();
         switch (not/10){
             case 1:
             case 2:
@@ -28,6 +28,35 @@ public class dddd {
                 break;
             default:
                 System.out.println("Gecerli not giriniz...");
+
+        */
+
+                int var = scan.nextInt();
+
+                switch (var) {
+
+                    case 1:
+
+                        System.out.print("J");
+
+                    case 2:
+
+                    case 3:
+
+                        System.out.print("A");
+
+                        break;
+
+                    case 4:
+
+                        System.out.println("V");
+
+                    default:
+
+                        System.out.println("A");
+
+                }
         }
     }
-}
+
+
