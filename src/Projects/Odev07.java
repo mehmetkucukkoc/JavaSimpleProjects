@@ -1,4 +1,4 @@
-package ForLoopStars;
+package Projects;
 
 public class Odev07 {
 

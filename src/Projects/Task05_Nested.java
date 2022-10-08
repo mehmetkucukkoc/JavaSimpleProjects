@@ -1,4 +1,4 @@
-package ForLoopStars;
+package Projects;
 
 public class Task05_Nested {
     public static void main(String[] args) {
