@@ -1,5 +1,7 @@
 package Projects;
 
+import java.util.Scanner;
+
 public class Odev05 {
 
     /*
@@ -32,8 +34,24 @@ public class Odev05 {
 
     public static void main(String[] args) {
 
+        Scanner scan = new Scanner(System.in);
+        boolean ucunUssuMu;
+        int counter=0;
+        System.out.println("Lütfen Bir Sayı Giriniz");
+        int sayi = scan.nextInt();
+        for (int i =sayi;i>0; i--){
+            if(sayi%3==0){
+                sayi/=3;
+                counter++;
+            }
+            else if(sayi%3!=0) System.out.println(ucunUssuMu = false);
 
+            break;
+        } System.out.println("Girdiğiniz Sayı 3'ün "+counter+". Kuvvetidir.");
 
 
     }
+
+
 }
+

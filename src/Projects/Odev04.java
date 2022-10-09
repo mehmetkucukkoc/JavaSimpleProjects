@@ -13,7 +13,9 @@ public class Odev04 {
         //Kodu aşağıya yazınız.
 
 
-
+for (int i =1;i<100; i++){
+    if(i%20== 0) System.out.println(i);
+}
 
 
 
