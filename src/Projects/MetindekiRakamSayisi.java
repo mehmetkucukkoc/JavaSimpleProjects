@@ -13,7 +13,7 @@ public class MetindekiRakamSayisi {
         int counter = 0;
 
         for (int i = 0; i <= s.length() - 1; i++) {
-            if (s.charAt(i) >= 0 && s.charAt(i) <= 9) {
+            if (s.charAt(i) >= '0' && s.charAt(i) <= '9') {
                 counter++;
             } else System.out.println("Girdiğiniz Metinde Rakam Bulunmamaktadır");
         }

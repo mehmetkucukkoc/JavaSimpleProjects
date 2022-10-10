@@ -1,6 +1,6 @@
 package Projects;
 
-public class Task13_Nested {
+public class ForLoop_Ex02 {
 
     public static void main(String[] args) {
          /*
@@ -12,14 +12,21 @@ public class Task13_Nested {
         F F F F F F
         şekli yazdırınız
         */
-        int harf=65;//A ascii değeri
+
         for (int i = 0; i <6 ; i++) {//apt döngü
-            for (int j = 0; j <=i ; j++) {//daire döngü
+            for (int j = 5; j >=i ; j--) {//daire döngü
+                for (int k=0; k<=j;k++){
+                    System.out.print(" ");
+                }
                // System.out.print((char)(harf+j)+" ");
-              System.out.print((char)(harf+i)+" ");
+              System.out.print("*");
 
             }
             System.out.println();//dumy
+        }for(int i=0;i<5;i++){
+            for(int j=5;j>i;j--){
+                System.out.print("*");
+            }System.out.println();//dumy
         }
 
 
