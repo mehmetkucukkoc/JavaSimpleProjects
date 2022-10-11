@@ -1,6 +1,6 @@
-package Projects;
+package ProjectEulerNet;
 
-public class LargestPalindromeProduct {
+public class Problem4_LargestPalindromeProduct {
     public static void main(String[] args) {
 
 
