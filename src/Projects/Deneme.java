@@ -1,32 +1,30 @@
 package Projects;
 
-import java.util.Scanner;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 public class Deneme {
 
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Lütfen Bir İfade Giriniz : ");
-        String ifade = sc.nextLine();
-        int aSayisi = 0;
+        String array[]= {"Muhiddin","Selami","Hamdi","Ceylan"};
+        Integer array1[]= {90,21,55,67};
 
-        for (int i = 0; i < ifade.length(); i++) {
-            if (ifade.charAt(i) == 'a') {
-                aSayisi++;
+        List listele=new ArrayList();
+        List listele1=new ArrayList();//Dizilerimizi liste görünümüne aldık.
 
-
-            }
-            if (ifade.charAt(i) == 'c') {
-
-
-                break;
-            }
-
-        } System.out.println(aSayisi);
+        listele= Arrays.asList(array);
+        listele1=Arrays.asList(array1);//aslist metodumuz ile liste yapısına dönüştürdük.
+        //listelediğimiz dizilerimizi yazdırdık.
+        System.out.println(listele.get(0));
+        System.out.println(listele);
+        System.out.println(listele1.get(0));
+        System.out.println(listele1);
 
 
     }
-
-
 }
+
+
+
 
