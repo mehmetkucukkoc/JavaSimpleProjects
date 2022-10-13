@@ -1,29 +1,36 @@
 package Projects;
 
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
+import java.util.Scanner;
 
 public class Deneme {
 
     public static void main(String[] args) {
-        String array[]= {"Muhiddin","Selami","Hamdi","Ceylan"};
-        Integer array1[]= {90,21,55,67};
-
-        List listele=new ArrayList();
-        List listele1=new ArrayList();//Dizilerimizi liste görünümüne aldık.
-
-        listele= Arrays.asList(array);
-        listele1=Arrays.asList(array1);//aslist metodumuz ile liste yapısına dönüştürdük.
-        //listelediğimiz dizilerimizi yazdırdık.
-        System.out.println(listele.get(0));
-        System.out.println(listele);
-        System.out.println(listele1.get(0));
-        System.out.println(listele1);
-
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Kaç Adet Sayi Gireceksiniz");
+        int toplam = 0;
+        int sayac = 0;
+        int sayiAdet = scan.nextInt();
+        int sayi[] = new int[sayiAdet];
+        for (int i = 0; i < sayi.length; i++) {
+            System.out.println("Lütfen " + i + ". İndeksi Giriniz");
+            sayi[i] = scan.nextInt();
+            toplam += sayi[i];
+        }
+        for (int i = 0; i < sayi.length; i++) {
+            if (toplam / sayiAdet < sayi[i]) {
+                sayac++;
+            }
+        }
+        System.out.println("Ortalamadan Büyük Olan Eleman Sayısı : "+sayac);
+        System.out.println("Ortalama : "+(toplam/sayiAdet));
+        System.out.println(Arrays.toString(sayi));
 
     }
+
+
 }
+
 
 
 
