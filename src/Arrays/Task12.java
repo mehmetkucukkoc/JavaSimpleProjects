@@ -1,7 +1,5 @@
 package Arrays;
 
-import java.util.Arrays;
-
 public class Task12 {
 
     public static void main(String[] args) {
@@ -13,7 +11,9 @@ public class Task12 {
         */
 
         int arr[] = {2, 6, 4, 5, 8, 9};
-
+for (int i = 0; i < arr.length; i++){
+    System.out.println(arr[i] * arr[i]);
+}
 
 
     }
