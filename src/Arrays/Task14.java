@@ -13,7 +13,8 @@ public class Task14 {
         String str = "ade1r4d3";
 
        String str2=str.replaceAll("[a-z]","");
-       String str3[]=str2.split("");
+        System.out.println(str2);
+        String str3[]=str2.split("");
        int toplam = 0;
        for (int i = 0; i <str3.length; i++){
            int sayi=Integer.parseInt(str3[i]);
