@@ -1,10 +1,8 @@
 package Arrays.ArraysEasyTasks.odev;
 
 import java.util.Arrays;
-import java.util.Scanner;
 
 public class _12_Array_no14 {
-
     public static void main(String[] args) {
 
         /*
@@ -21,7 +19,15 @@ public class _12_Array_no14 {
         NOT: Array elemanlarını 1,2,3 olarak değiştirirseniz sonuç doğru olmalı
          */
 
+        Integer arr[] = {1, 2, 3};
+
+
+        if(Arrays.asList(arr).contains(1)&&Arrays.asList(arr).contains(4)){
+            System.out.println(false);
+        }else             System.out.println(true);
 
 
     }
+
+
 }

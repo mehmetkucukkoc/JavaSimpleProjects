@@ -17,7 +17,11 @@ public class _13_Advance_zeroFront {
    Sonuç böyle olmalı :  0,0,0,1,1
 
        */
+Integer arr1[]={1,0,2,3,9,0,5,0};
+Integer arr2[];
+arr2=Arrays.copyOf(arr1,4);
 
+        System.out.println(Arrays.toString(arr2));
 
     }
 }
