@@ -12,7 +12,7 @@ public class ArrayForEach {
         System.out.println(dizi[4]);
         Object array = new Object[]{1, 2.44, -2, 'a', "Mehmet"};
         for (int i=0;i<5; i++) {
-            System.out.println(array[i]);
+
         }
 
     }
