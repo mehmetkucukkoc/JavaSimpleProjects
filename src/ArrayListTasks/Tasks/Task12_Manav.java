@@ -1,7 +1,6 @@
 package ArrayListTasks.Tasks;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 
@@ -20,11 +19,26 @@ public class Task12_Manav {
          * 4. Adim : Alisveris bitince toplam odemesi gereken tutari goster.
          *
          * */
+        Scanner sc = new Scanner(System.in);
+        int meyveSecim=0;
+        int kg = 0;
+        int toplamFiyat = 0;
+        List<String> meyveList = new ArrayList<>(List.of("Elma", "Portakal", "Armut", "Üzüm", "İncir"));
+        List<Integer> meyveFiyat = new ArrayList<>(List.of(15, 10, 25, 20, 40));
+        System.out.println("Meyve Listemiz = " + meyveList);
+        for (int i = 0; i < meyveList.size(); i++) {
+            System.out.println(meyveList.get(i) + " için " + i + " Sayısına Basınız");
+            meyveSecim=sc.nextInt();
+            System.out.println(meyveList.get(meyveSecim)+" Seçtiniz.");
+
+        }
+       // System.out.println("Kaç Kg " + meyveList.get(i) + " Almak İstiyorsunuz");
+       // kg = sc.nextInt();
+       // toplamFiyat = meyveFiyat.get(i) * kg;
+       // System.out.println("toplamFiyat = " + toplamFiyat);
 
 
     }
-
-
 
 
 }
