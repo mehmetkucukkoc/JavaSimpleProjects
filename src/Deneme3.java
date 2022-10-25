@@ -1,8 +1,20 @@
 public class Deneme3 {
     public static void main(String[] args) {
-        Integer sayi=123;
-        System.out.println(sayi.getClass().getName());
-        String str=Integer.toString(sayi);
-        System.out.println(str.getClass().getName());
+        try {
+            int a = 5;
+            int b = 0;
+            System.out.println("a/b = " + a / b);
+        } catch (ArithmeticException e) {
+            System.out.println("Hatanız Bu : " + e);
+        }
+
+        System.out.println("kod çalışmaya devam etti");
+
     }
+
 }
+
+
+
+
+

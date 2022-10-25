@@ -1,32 +1,57 @@
-import java.util.Scanner;
-
 public class Deneme2 {
     public static void main(String[] args) {
+        int a = 0;
+        int b = 0;
+        int c = 0;
+        int d = 0;
+        int e = 0;
+        int f = 0;
+        int g = 0;
+        int sayi;
+        int toplam = 0;
+        for (int i = 2; i < 10000000; i++) {
 
-        Scanner scan = new Scanner(System.in);
+            sayi = i;
 
+            g = sayi % 10;
+            sayi /= 10;
+            f = sayi % 10;
+            sayi /= 10;
+            e = sayi % 10;
+            sayi /= 10;
+            d = sayi % 10;
+            sayi /= 10;
+            c = sayi % 10;
+            sayi /= 10;
+            b = sayi % 10;
+            sayi /= 10;
+            a = sayi % 10;
+            // System.out.println(a);
+            // System.out.println(b);
+            // System.out.println(c);
+            // System.out.println(d);
+            // System.out.println(e);
+            //  String s = ("" + a + b + c + d + e);
+            //  System.out.println(s);
+//
+            //  int sayi2 = Integer.parseInt(s);
+            //  System.out.println(sayi2);
 
-        for (int i = 1; i < 6; i++) {
-            String str = scan.next();
+            if (i == a * a * a * a * a +
+                    b * b * b * b * b +
+                    c * c * c * c * c +
+                    d * d * d * d * d +
+                    e * e * e * e * e +
+                    f * f * f * f * f +
+                    g * g * g * g * g) {
+                System.out.println(i);
 
+               toplam += i;
 
-            try {
-
-                long input2 = Long.valueOf(str);
-                if (input2 > Integer.MAX_VALUE || input2 < Integer.MIN_VALUE)
-                    System.out.println(input2 + " can be fitted in:\n* long");
-              else  if (input2 > Short.MAX_VALUE || input2 < Short.MIN_VALUE)
-                    System.out.println(input2 + " can be fitted in:\n* int\n* long");
-               else if (input2 > Byte.MAX_VALUE || input2 < Byte.MIN_VALUE)
-                    System.out.println(input2 + " can be fitted in:\n* short\n* int \n* long");
-                if (input2 >= Byte.MIN_VALUE && input2 <= Byte.MAX_VALUE)
-                    System.out.println(input2 + " can be fitted in:\n* byte\n* short \n* int\n* long");
-
-
-            } catch (Exception e) {
-                System.out.println(str + " can't be fitted anywhere.");
             }
 
         }
+        System.out.println("toplam = " + toplam);
+
     }
 }
