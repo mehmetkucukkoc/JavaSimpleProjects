@@ -7,12 +7,12 @@ import java.util.Properties;
 
 public class SendMail {
 
-    EMailRegistration user1 = new EMailRegistration("Ramazan", "Küçükkoç");
+    EMailRegistration user1 = new EMailRegistration("Seda", "Küçükkoç");
 
     public void messageSender() {
 
         final String username = "mhmtkckkc@gmail.com";
-        final String password = "vfoyihsrevecpseh";
+        final String password = "";
 
         Properties prop = new Properties();
         prop.put("mail.smtp.host", "smtp.gmail.com");
@@ -34,7 +34,7 @@ public class SendMail {
             message.setFrom(new InternetAddress("mhmtkckkc@gmail.com"));
             message.setRecipients(
                     Message.RecipientType.TO,
-                    InternetAddress.parse("ramazankucukkoc43@gmail.com")
+                    InternetAddress.parse("sedakckkc@gmail.com")
             );
             message.setSubject("Bu Mail Java Üzerinden Gönderilmiştir.");
             message.setText("Sayın " + user1.firtsName + " " + user1.lastName + " İşe Alındınız " +
