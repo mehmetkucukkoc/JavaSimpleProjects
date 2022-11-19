@@ -1,4 +1,4 @@
-package HomeWorks.yirmiBirOtuz.UrunSatis;
+package HomeWorks.yirmiBirOtuz.Satis;
 
 public class Urun {
     private double kraker = 2.5;

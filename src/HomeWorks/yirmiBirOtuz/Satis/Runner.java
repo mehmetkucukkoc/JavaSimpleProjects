@@ -1,4 +1,4 @@
-package HomeWorks.yirmiBirOtuz.UrunSatis;
+package HomeWorks.yirmiBirOtuz.Satis;
 
 public class Runner {
     public static void main(String[] args) {

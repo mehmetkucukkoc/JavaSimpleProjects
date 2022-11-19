@@ -1,8 +1,9 @@
-import java.util.HashSet;
+package HomeWorks.elliBirAltmis;
+
 import java.util.List;
 import java.util.Set;
 
-public class Deneme {
+public class HashSet {
 
 
     public static void main(String[] args) {
@@ -17,7 +18,7 @@ public class Deneme {
     String 2 = peach
     CEVAP: "peach" , "strawberry" , "kiwi" , "pineapple"
      */
-        Set<String> hashset = new HashSet<String>(List.of("banana", "strawberry", "kiwi", "pineapple"));
+        Set<String> hashset = new java.util.HashSet<String>(List.of("banana", "strawberry", "kiwi", "pineapple"));
         String str1 = "banana";
         String str2 = "peach";
         changeSet(hashset, str1, str2);

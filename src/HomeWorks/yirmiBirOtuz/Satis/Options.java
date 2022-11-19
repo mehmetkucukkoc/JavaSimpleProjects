@@ -1,4 +1,4 @@
-package HomeWorks.yirmiBirOtuz.UrunSatis;
+package HomeWorks.yirmiBirOtuz.Satis;
 
 import java.util.Scanner;
 
